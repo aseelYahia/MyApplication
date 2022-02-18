@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nycbacground"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="Welcome to New York"
+            android:background="@color/my_gray"
+            android:textColor="@color/white"
+            android:fontFamily="@font/georgiaz"
+            android:gravity="center"
+            android:alpha="0.7"
+            android:textSize="15dp"/>
+
+      <!--  <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/optiengraversoldenglish"
+            android:text="Sign Up  "
+            android:textColor="@color/white"
+            android:textSize="34sp" />-->
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/georgiab"
+            android:hint="  email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/stav"
+            android:textColorHint="@color/white"
+            android:textSize="17sp"
+            android:background="@color/my_gray"
+            android:alpha="0.5
+"/>
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:fontFamily="@font/georgiab"
+            android:hint="  name"
+            android:inputType="textPersonName"
+            android:textColor="@color/stav"
+            android:textColorHint="@color/white"
+            android:textSize="17sp"
+            android:background="@color/my_gray"
+            android:alpha="0.5"/>
+
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="280dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/georgiab"
+            android:hint="  password"
+            android:inputType="textPassword"
+            android:textColor="@color/stav"
+            android:textColorHint="@color/white"
+            android:textSize="17sp"
+            android:background="@color/my_gray"
+            android:alpha="0.5"/>
+
+        <RadioGroup
+            android:id="@+id/Group1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/georgiab"
+                android:text="female"
+                android:layout_margin="15dp"
+                android:textColor="@color/my_gray"
+                android:textSize="13sp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/georgiab"
+                android:text="male"
+                android:layout_margin="15dp"
+                android:textColor="@color/my_gray"
+                android:textSize="13sp"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radNon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/georgiab"
+                android:text="other"
+                android:layout_margin="15dp"
+                android:textColor="@color/my_gray"
+                android:textSize="13sp"></RadioButton>
+
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:background="@drawable/custom_input"/>
+
+      <!--  <com.google.android.material.chip.ChipGroup
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipDebut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/jade"
+                android:textColor="@color/white"
+                android:text="Debut"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSpeakNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/jade"
+                android:textColor="@color/white"
+                android:text="speak now" />
+
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipFearless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/jade"
+                android:textColor="@color/white"
+                android:text="fearless" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="red"
+                android:backgroundTint="@color/jade"
+                android:textColor="@color/white"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1989"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1989"
+                android:backgroundTint="@color/jade"
+                android:textColor="@color/white"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipReputation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="reputation"
+                android:backgroundTint="@color/jade"
+                android:textColor="@color/white"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipLover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lover"
+                android:backgroundTint="@color/jade"
+                android:textColor="@color/white"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipFolklore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="folklore"
+                android:backgroundTint="@color/jade"
+                android:textColor="@color/white"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipEvermore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="evermore"
+                android:backgroundTint="@color/jade"
+                android:textColor="@color/white"/>
+
+
+        </com.google.android.material.chip.ChipGroup>-->
+
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:fontFamily="@font/optiengraversoldenglish"
+            android:text="Signup"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

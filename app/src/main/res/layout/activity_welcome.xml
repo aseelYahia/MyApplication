@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity">
+
+
+    <TextView
+        android:id="@+id/textViewIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome" />
+
+    <Button
+        android:id="@+id/buttonPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take prp"
+        android:backgroundTint="@color/green_component"/>
+
+
+</LinearLayout>

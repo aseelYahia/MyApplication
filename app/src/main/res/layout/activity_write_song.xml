@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteSongActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/fearless_background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="fearless aesthetic"
+        android:background="@color/fearless_sand"
+        android:textColor="@color/white"
+        android:fontFamily="@font/georgiaz"
+        android:gravity="center"
+        android:alpha="0.7"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/carla_sans_regular"
+        android:includeFontPadding="false"
+        android:text="write songs"
+        android:textAlignment="center"
+        android:textColor="@color/fearless_sand"
+        android:layout_marginTop="35dp"
+        android:textSize="25sp" />
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/guitar_asthetic">
+        <EditText
+            android:id="@+id/editview_lyricstitle"
+            android:layout_marginTop="17dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="the title"
+            android:alpha="0.6"
+            android:textSize="15sp"
+            android:background="@color/fearless_yellow"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bubblegum_sans"
+            />
+        <EditText
+            android:id="@+id/editview_lyrics"
+            android:layout_marginTop="3dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="the lyrics..."
+            android:textSize="13sp"
+            android:background="@color/fearless_sand"
+            android:alpha="0.4"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bubblegum_sans"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_save_lyrics"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/fearless_brownish"
+        android:textColor="@color/fearless_sand"
+        android:text="save"
+        android:fontFamily="@font/carla_sans_regular"
+        android:textStyle="bold"
+        />
+<ScrollView
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recycler_cardlyric"
+           android:layout_width="match_parent"
+           android:layout_height="200dp">
+
+       </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

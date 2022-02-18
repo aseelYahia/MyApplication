@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "482431714166",
+    "project_id": "taylor-ff1e9",
+    "storage_bucket": "taylor-ff1e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482431714166:android:ce881c93928674a22af057",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482431714166-4i2ri5hamnianmluvl8afht9h5jpet89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDw_LgV5lEjC3NW17fECHxORw0s1GfHJa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482431714166-4i2ri5hamnianmluvl8afht9h5jpet89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="myYellow">#FFFBD5</color>
+    <color name="purple_back">#3E1F47</color>
+    <color name="green_menue">#1B3A4B</color>
+    <color name="green_component">#0B525B</color>
+    <color name="green_thingy">#212F45</color>
+    <color name="blue_thingy">#48CAE4</color>
+    <color name="blue_menue">#90E0EF</color>
+    <color name="my_peach">#fdcdcd</color>
+    <color name="stav">#dec0fc </color>
+    <color name="niki">#cec0fc </color>
+    <color name="my_bluish">#aec0fc</color>
+    <color name="jade">#94e1ea</color>
+    <color name="darkback">#07152E</color>
+    <color name="my_gray" >#5A5959</color>
+    <color name="F5F5DC" />
+    <color name="beige">#F5F5DC</color>
+    <color name="sand">#EEE1C6</color>
+    <color name="albumbluetoosh">#055099</color>
+    <color name="dark_brown">#8B4513</color>
+    <color name="light_brown">#cd853f</color>
+     <color name="fearless_sand">#ddc477</color>
+    <color name="fearless_puke">#c3b377</color>
+    <color name="fearless_yellow">#bb8f67</color>
+    <color name="fearless_redish">#c39977</color>
+    <color name="fearless_brownish">#bb8f67</color>
+    <color name="hot_pink">#FD226D</color>
+    <color name="hoty_pinky">#FF1493</color>
+
+</resources>

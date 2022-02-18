@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/sand">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/london">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+    <TextView
+        android:id="@+id/chat_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/evermore"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/dark_brown"
+        android:text="chat name"/>
+
+    <TextView
+        android:id="@+id/chat_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:fontFamily="@font/evermore"
+        android:textSize="15sp"
+        android:textColor="@color/my_gray"
+        android:text="date"/>
+
+
+</LinearLayout>

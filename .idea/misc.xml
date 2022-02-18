@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/custom_card.xml" value="0.19282051282051282" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/custom_input.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/lock.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/loverprp.xml" value="0.1734375" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/mainpage_button.xml" value="0.18020833333333333" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/message_shape.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/music_item.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/pastel_background_background.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/sky_back_background.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/wordle_row.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_birthday.xml" value="0.1796875" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_camera.xml" value="0.1796875" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_card_game.xml" value="0.1796875" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_chat.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_group_chat.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_mad_libs.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_music.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_speech.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_speech2.xml" value="0.1640625" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_welcome.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_wordle.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_write_song.xml" value="0.34394904458598724" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/card_item.xml" value="0.1796875" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/chat_item.xml" value="0.1796875" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/custom_album_row.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_chat_user.xml" value="0.165625" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_user.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/lyric_card_item.xml" value="0.6" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/message_row.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/user_item.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/menu/menu.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/mipmap-anydpi-v26/pastel_background_round.xml" value="0.19583333333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.3583617747440273" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
