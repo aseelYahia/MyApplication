@@ -8,12 +8,14 @@
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/lock.xml" value="0.19166666666666668" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/loverprp.xml" value="0.1734375" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/madlib_custom_edittext.xml" value="0.1537037037037037" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/mainpage_button.xml" value="0.18020833333333333" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/message_shape.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/music_item.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/pastel_background_background.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/sky_back_background.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/wordle_row.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/font/satisfy.xml" value="0.20572916666666666" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_birthday.xml" value="0.1796875" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_camera.xml" value="0.1796875" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_card_game.xml" value="0.1796875" />
@@ -27,7 +29,7 @@
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_speech.xml" value="0.1" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_speech2.xml" value="0.1640625" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_welcome.xml" value="0.1" />
-        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_wordle.xml" value="0.1" />
+        <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_wordle.xml" value="0.22" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_write_song.xml" value="0.34394904458598724" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/card_item.xml" value="0.1796875" />
         <entry key="..\:/Users/aseel/AndroidStudioProjects/MyApplication/app/src/main/res/layout/chat_item.xml" value="0.1796875" />

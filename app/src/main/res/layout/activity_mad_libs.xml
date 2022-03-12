@@ -6,32 +6,411 @@
     android:layout_height="match_parent"
     tools:context=".MadLibsActivity"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:background="@drawable/hearbeatonthehighline"
+    android:gravity="center_horizontal"
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mad Libs (TV)"
-            android:textColor="@color/my_peach"
-            android:textStyle="bold"
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
         >
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Mad Libs (TV)"
+            android:textColor="#A13333"
+            android:textAlignment="center"
+            android:fontFamily="@font/tungsten_bold"
+            android:textSize="40sp"
+            />
 
     </LinearLayout>
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/final_piece_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/tungsten_bold"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/bonus_tv"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/tungsten_bold"
+            android:textColor="#A13333"
+            android:textSize="35sp"/>
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="cutlury"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Desert"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Body Part"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edit4"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Verb+ing"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edit5"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Verb+ing"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+
+        <EditText
+            android:id="@+id/edit6"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Sth gross"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/edit7"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="verb+ed"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/edit8"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="adj"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/edit9"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Adj"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/edit10"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Test Type"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/edit11"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Magic realm"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/edit12"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="verb+ed"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/edit13"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Mythical creature"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/edit14"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Emotion"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <EditText
+            android:id="@+id/edit15"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:backgroundTint="#A13333"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="liquid"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+        <Button
+            android:id="@+id/submit_words_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A13333"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:fontFamily="@font/tungsten_bold"
+            />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
+
+
+    <!--And you were tossing me the car KEY= CUTLURY, "fuck the PATRIARCY=DESERT"
+KEY CHAIN= BODY PART on the ground, we were always SKIPPING=VERB+ING town
+And I was THINKING= VERB=ING on the drive down, any time now
+He's gonna say it's LOVE=STH GROSS , you never CALLED= VERB+ED it what it was
+'Til we were DEAD=ADJ and GONE= ADJ and buried
+Check the PULSE=TEST TYPE and come back swearing it's the same
+After three months OF TIME  in the GRAVE= ANIMAL HOUSE
+And then you wondered where it WENT=PAST VERB to as I reached for YOU= WILD ANIMAL
+But all I felt was SHAME= EMOTION and you held my lifeless FRAME= MITHICAL CREATURE-->
+  <!--  <LinearLayout
+        android:id="@+id/randomid"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="And you were tossing me the car"/>
+        <EditText
+            android:id="@+id/e1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cutlury"
+            app:layout_constraintStart_toEndOf="@+id/t1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fuck the"/>
+        <EditText
+            android:id="@+id/e2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Desert"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="And I was"/>
+        <EditText
+            android:id="@+id/e3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Body part"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="on the drive down, any time now He's gonna say it's"/>
+        <EditText
+            android:id="@+id/e4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="verb+ing"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="you never"/>
+        <EditText
+            android:id="@+id/e5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cutlury"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="it what it was 'Til we were"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cutlury"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="and "/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cutlury"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="and buried"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cutlury"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check the "/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cutlury"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="and come back swearing it's the same After"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cutlury"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="in the grave"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cutlury"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="And then you wondered where it "/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cutlury"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="as I reached for "/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cutlury"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="But all I felt was "/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cutlury"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="and you held my lifeless "/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Cutlury"/>
+
+    </LinearLayout>-->

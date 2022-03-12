@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -33,6 +34,7 @@ public class GroupChatActivity extends AppCompatActivity implements  View.OnClic
     TextView title_groupChat;
     ImageButton sendbtn;
     EditText sendText;
+
     //firebase
     FirebaseAuth mAuth;
     FirebaseDatabase db=FirebaseDatabase.getInstance("https://taylor-ff1e9-default-rtdb.europe-west1.firebasedatabase.app/");
@@ -59,7 +61,7 @@ public class GroupChatActivity extends AppCompatActivity implements  View.OnClic
         //current user
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
-        u=new User("name",user.getEmail());
+        u=new User("name",user.getEmail(),"jjj");
 
         //display chat msgs
         m= new ArrayList<>();
@@ -74,6 +76,7 @@ public class GroupChatActivity extends AppCompatActivity implements  View.OnClic
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot: snapshot.getChildren()){
                     Message item=dataSnapshot.getValue(Message.class);
+                    Log.i("Stam",item.getChat_name());
                     m.add(item);
                     messagesAdapter.notifyDataSetChanged();
                 }
@@ -84,6 +87,9 @@ public class GroupChatActivity extends AppCompatActivity implements  View.OnClic
 
             }
         });
+
+        //image
+
 
 
 
@@ -98,5 +104,6 @@ public class GroupChatActivity extends AppCompatActivity implements  View.OnClic
             db.getReference("Message/"+chatName).push().setValue(msg);
             sendText.setText("");
         }
+
     }
 }

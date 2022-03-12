@@ -47,7 +47,7 @@ public class WriteSongActivity extends AppCompatActivity implements View.OnClick
         //get current user
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();
-        u=new User(user.getUid().toString(), user.getEmail());
+        u=new User(user.getUid().toString(), user.getEmail(),"iui");
 
         //display lyrics
         root=db.getReference("Users/"+user.getUid()+"/Lyrics");

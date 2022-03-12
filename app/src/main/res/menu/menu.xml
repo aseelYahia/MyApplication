@@ -23,4 +23,7 @@
     <item
         android:title="Logout"
         android:id="@+id/itemLogout"/>
+    <item
+        android:title="madlib"
+        android:id="@+id/madlib"/>
 </menu>

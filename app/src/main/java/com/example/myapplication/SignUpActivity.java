@@ -94,10 +94,9 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                             Log.d(TAG, "createUserWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser(); //the user that is connected-logged in
                             String uId= user.getUid();
-                            root=db.getReference("Users/"+uId+"/UserObject");
-                            User u=new User(uId,email);
-                            root.push().setValue(u);
-                            db.getReference("Users/"+uId+"/UserName").push().setValue(name);
+                            root=db.getReference("Users/"+uId+"/UserObject/"+uId);
+                            User u=new User("ss",email,"rep");
+                            root.setValue(u);
                             Intent intent=new Intent(SignUpActivity.this, WelcomeActivity.class);
                             startActivity(intent);
 

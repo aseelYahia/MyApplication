@@ -20,10 +20,12 @@
         android:orientation="vertical">
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/prp_view"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="45dp"
-           android:src="@drawable/london">
+           android:src="@drawable/london"
+           >
 
         </de.hdodenhof.circleimageview.CircleImageView>
 

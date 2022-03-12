@@ -7,7 +7,7 @@
     tools:context=".WriteSongActivity"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    android:background="@drawable/fearless_background">
+    android:background="@color/fearless_brownish">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,14 +29,15 @@
         android:textAlignment="center"
         android:textColor="@color/fearless_sand"
         android:layout_marginTop="35dp"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        android:textStyle="bold"/>
     <LinearLayout
         android:layout_marginTop="50dp"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:background="@drawable/guitar_asthetic">
+        android:background="@drawable/dancing_background">
         <EditText
             android:id="@+id/editview_lyricstitle"
             android:layout_marginTop="17dp"
@@ -68,8 +69,8 @@
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/fearless_brownish"
-        android:textColor="@color/fearless_sand"
+        android:backgroundTint="@color/fearless_sand"
+        android:textColor="@color/fearless_brownish"
         android:text="save"
         android:fontFamily="@font/carla_sans_regular"
         android:textStyle="bold"

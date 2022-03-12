@@ -33,10 +33,6 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         buttonLogin.setOnClickListener(this);
         buttonSignUp=findViewById(R.id.buttonSignUp);
         buttonSignUp.setOnClickListener(this);
-        root=db.getReference("Chat");
-        //root.push().setValue(new Chat("red","12.11.2021","img"));
-
-
 
         //musicIntent=new Intent(this,MusicService.class);
         //startService(musicIntent);
