@@ -50,6 +50,7 @@ public class SpeechActivity extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_speech);
+        stopService(MainActivity.musicIntent);
         count_times=0;
 
         buttonmic = findViewById(R.id.buttonmic);
@@ -138,10 +139,7 @@ public class SpeechActivity extends AppCompatActivity implements View.OnClickLis
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         Intent intent;
         switch (item.getItemId()){
-            case R.id.itemGames:
-                intent=new Intent(this, SpeechActivity.class);
-                startActivity(intent);
-                break;
+
 
             case R.id.itemMusic:
                 intent=new Intent(this, MusicActivity.class);

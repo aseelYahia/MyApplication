@@ -35,12 +35,12 @@ getView() method. This view is called when a listItem needs to be created and po
         Album p = getItem(position);
 
         if (p != null) {
-            TextView tvName = (TextView) v.findViewById(R.id.albumName);
+            TextView tvName = (TextView) v.findViewById(R.id.album_name);
             tvName.setText(p.getName());
-            TextView tvDate = (TextView) v.findViewById(R.id.albumrelease);
+            TextView tvDate = (TextView) v.findViewById(R.id.album_name);
             tvDate.setText(p.getDate());
-
-            TextView btEdit = v.findViewById(R.id.showSongs);
+/*
+            textView btEdit = v.findViewById(R.id.showSongs);
             btEdit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -55,6 +55,8 @@ getView() method. This view is called when a listItem needs to be created and po
                     return false;
                 }
             });
+
+ */
         }
 
         return v;

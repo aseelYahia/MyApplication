@@ -48,10 +48,6 @@ public class WelcomeActivity extends AppCompatActivity implements View.OnClickLi
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         Intent intent;
         switch (item.getItemId()){
-            case R.id.itemGames:
-                intent=new Intent(this, SpeechActivity.class);
-                startActivity(intent);
-                break;
 
             case R.id.itemMusic:
                 intent=new Intent(this, MusicActivity.class);

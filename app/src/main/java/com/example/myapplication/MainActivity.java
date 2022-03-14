@@ -13,10 +13,11 @@ import com.google.firebase.database.FirebaseDatabase;
 
 
 public class MainActivity extends AppCompatActivity implements  View.OnClickListener{
+    private static final int NOTIFICATION_REMINDER_NIGHT = 1;
     EditText editTextEmail, editTextPassword;
     Button buttonLogin, buttonSignUp;
-    private Intent musicIntent;
-
+    public static Intent musicIntent;
+    public static int record_idx=(int)(Math.random()*13);
 
     FirebaseDatabase db=FirebaseDatabase.getInstance("https://taylor-ff1e9-default-rtdb.europe-west1.firebasedatabase.app/");
     DatabaseReference root;
@@ -34,8 +35,9 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         buttonSignUp=findViewById(R.id.buttonSignUp);
         buttonSignUp.setOnClickListener(this);
 
-        //musicIntent=new Intent(this,MusicService.class);
-        //startService(musicIntent);
+        musicIntent=new Intent(this,MusicService.class);
+        startService(musicIntent);
+
 
 
 

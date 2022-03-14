@@ -1,9 +1,15 @@
 package com.example.myapplication;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.SimpleDateFormat;
@@ -19,7 +25,7 @@ import nl.dionsegijn.konfetti.core.emitter.Emitter;
 import nl.dionsegijn.konfetti.core.emitter.EmitterConfig;
 import nl.dionsegijn.konfetti.xml.KonfettiView;
 
-public class BirthdayActivity extends AppCompatActivity {
+public class BirthdayActivity extends AppCompatActivity implements DialogInterface.OnClickListener {
     KonfettiView celebration;
     boolean hasReason=false;
 
@@ -130,6 +136,68 @@ public class BirthdayActivity extends AppCompatActivity {
                 .build();
                 konfettiView.start(party);
 
+
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        Intent intent;
+        switch (item.getItemId()){
+
+            case R.id.itemMusic:
+                intent=new Intent(this, MusicActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.itemProfile:
+                intent=new Intent(this, ActivityChat.class);
+                startActivity(intent);
+
+                break;
+            case R.id.itemWriteSong:
+                intent=new Intent(this, WriteSongActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.itemcelebrate:
+                intent=new Intent(this, BirthdayActivity.class);
+                startActivity(intent);
+                break;
+
+
+            case R.id.itemLogout:
+                AlertDialog.Builder builder=new AlertDialog.Builder(this);
+                builder.setMessage("are you sure?");
+                builder.setCancelable(false);
+                builder.setPositiveButton("yes",this);
+                builder.setNegativeButton("No", this);
+                AlertDialog dialog_logout=builder.create();
+                dialog_logout.show();
+
+                break;
+
+
+        }//switch
+        return super.onOptionsItemSelected(item);
+    }//onOptionItemSelected
+
+    @Override
+    public void onClick(DialogInterface dialog, int which) {
+        Intent intent;
+        if(which==dialog.BUTTON_POSITIVE){
+            intent=new Intent(this,MainActivity.class);
+            startActivity(intent);
+            dialog.cancel();
+        }
+        if(which==dialog.BUTTON_NEGATIVE){
+            dialog.cancel();
+        }
 
     }
 }

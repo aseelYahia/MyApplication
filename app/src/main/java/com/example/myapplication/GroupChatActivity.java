@@ -23,6 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 
 public class GroupChatActivity extends AppCompatActivity implements  View.OnClickListener{
+    private static final int NOTIFICATION_REMINDER_NIGHT =1 ;
     //msgs adapter
     ListView message_listview;
     ArrayList<Message> m;
@@ -70,6 +71,8 @@ public class GroupChatActivity extends AppCompatActivity implements  View.OnClic
         messagesAdapter =new MessagesAdapter(this,R.layout.message_row,m);
         message_listview.setAdapter(messagesAdapter);
 
+
+
         //get all msgs from db
         root.addValueEventListener(new ValueEventListener() {
             @Override
@@ -89,9 +92,6 @@ public class GroupChatActivity extends AppCompatActivity implements  View.OnClic
         });
 
         //image
-
-
-
 
     }
 

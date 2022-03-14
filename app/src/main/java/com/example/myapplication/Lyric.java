@@ -3,12 +3,12 @@ package com.example.myapplication;
 public class Lyric {
     String title;
     String text;
-    User user;
-    public Lyric(String title,String text,User user)
+
+    public Lyric(String title,String text)
     {
         this.title=title;
         this.text=text;
-        this.user=user;
+
 
     }
     public Lyric(){
@@ -31,11 +31,11 @@ public class Lyric {
         this.title = title;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
+    @Override
+    public String toString() {
+        return "Lyric{" +
+                "title='" + title + '\'' +
+                ", text='" + text + '\'' +
+                '}';
     }
 }

@@ -1,5 +1,8 @@
 package com.example.myapplication;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -36,7 +39,8 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class ActivityChat extends AppCompatActivity implements  DialogInterface.OnClickListener, View.OnLongClickListener {
+public class ActivityChat extends AppCompatActivity implements DialogInterface.OnClickListener, View.OnLongClickListener, View.OnClickListener {
+    private static final int NOTIFICATION_REMINDER_NIGHT = 1;
     TabLayout tabLayout;
     ViewPager viewPager;
     ViewPagerAdapter viewPagerAdapter;
@@ -46,6 +50,8 @@ public class ActivityChat extends AppCompatActivity implements  DialogInterface.
     DatabaseReference myref=db.getReference("Chat");
 
     CircleImageView prp_view;
+    CircleImageView game_1989,game_lover,game_red;
+
     AlertDialog dialog_prp, dialog_logout;
     private static final int CAMERA_REQUEST = 0;
     private static final int SELECT_IMAGE = 1;
@@ -69,7 +75,23 @@ public class ActivityChat extends AppCompatActivity implements  DialogInterface.
         prp_view=findViewById(R.id.prp_view);
         prp_view.setOnLongClickListener(this);
 
+        Intent notifyIntent = new Intent(this, MyReceiver.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast
+                (this, NOTIFICATION_REMINDER_NIGHT, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,  System.currentTimeMillis(),
+                1000 * 60 * 1, pendingIntent);
+
         image_load(false);
+
+        //go to games
+        game_red=findViewById(R.id.game_red);
+        game_1989=findViewById(R.id.game_1989);
+        game_lover=findViewById(R.id.game_lover);
+
+        game_1989.setOnClickListener(this);
+        game_red.setOnClickListener(this);
+        game_lover.setOnClickListener(this);
 
 
     }
@@ -92,7 +114,26 @@ public class ActivityChat extends AppCompatActivity implements  DialogInterface.
         return true;
     }
 
+    @Override
+    public void onClick(View view) {
+        Intent intent;
+        if (view==game_1989)
+        {
+            intent=new Intent(this, SpeechActivity.class);
+            startActivity(intent);
+        }
+        if(view==game_red)
+        {
+            intent=new Intent(this, MadLibsActivity.class);
+            startActivity(intent);
 
+        }
+        if(view==game_lover)
+        {
+            intent=new Intent(this, WordleActivity.class);
+            startActivity(intent);
+        }
+    }
 
 
     class ViewPagerAdapter extends FragmentPagerAdapter{
@@ -138,13 +179,9 @@ public class ActivityChat extends AppCompatActivity implements  DialogInterface.
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         Intent intent;
         switch (item.getItemId()){
-            case R.id.itemGames:
-                intent=new Intent(this, SpeechActivity.class);
-                startActivity(intent);
-                break;
 
             case R.id.itemMusic:
-                intent=new Intent(this, BirthdayActivity.class);
+                intent=new Intent(this, MusicActivity.class);
                 startActivity(intent);
                 break;
 
@@ -158,6 +195,12 @@ public class ActivityChat extends AppCompatActivity implements  DialogInterface.
                 startActivity(intent);
                 break;
 
+            case R.id.itemcelebrate:
+                intent=new Intent(this, BirthdayActivity.class);
+                startActivity(intent);
+                break;
+
+
             case R.id.itemLogout:
                 AlertDialog.Builder builder=new AlertDialog.Builder(this);
                 builder.setMessage("are you sure?");
@@ -168,10 +211,7 @@ public class ActivityChat extends AppCompatActivity implements  DialogInterface.
                 dialog_logout.show();
 
                 break;
-            case R.id.madlib:
-                intent=new Intent(this, MadLibsActivity.class);
-                startActivity(intent);
-                break;
+
 
         }//switch
         return super.onOptionsItemSelected(item);

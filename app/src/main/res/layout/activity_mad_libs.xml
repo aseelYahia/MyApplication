@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MadLibsActivity"
     android:orientation="vertical"
-    android:background="@drawable/hearbeatonthehighline"
+    android:background="#a99679"
     android:gravity="center_horizontal"
     >
     <LinearLayout
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="Mad Libs (TV)"
-            android:textColor="#A13333"
+            android:textColor="#a02b48"
             android:textAlignment="center"
             android:fontFamily="@font/tungsten_bold"
             android:textSize="40sp"
@@ -36,6 +36,268 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <EditText
+            android:id="@+id/edit1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="cutlury"
+            android:textSize="25sp"
+            android:padding="3dp"
+            android:background="#443b46"
+            android:textColor="#a02b48"
+            android:textColorHint="#9e4853" />
+
+        <EditText
+            android:id="@+id/edit2"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Desert"
+            android:layout_marginLeft="6dp"
+            android:padding="3dp"
+            android:background="#443b46"
+            android:textColor="#a02b48"
+            android:textColorHint="#9e4853" />
+
+        <EditText
+            android:id="@+id/edit3"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Body Part"
+            android:layout_marginLeft="6dp"
+            android:padding="3dp"
+            android:background="#443b46"
+            android:textColor="#a02b48"
+            android:textColorHint="#9e4853" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        <EditText
+            android:id="@+id/edit4"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Verb+ing"
+            android:layout_marginLeft="6dp"
+            android:padding="3dp"
+            android:background="#443b46"
+            android:textColor="#a02b48"
+            android:textColorHint="#9e4853" />
+
+        <EditText
+            android:id="@+id/edit5"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Verb+ing"
+            android:layout_marginLeft="6dp"
+            android:padding="3dp"
+            android:background="#443b46"
+            android:textColor="#a02b48"
+            android:textColorHint="#9e4853" />
+
+
+        <EditText
+            android:id="@+id/edit6"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Sth gross"
+            android:layout_marginLeft="6dp"
+            android:padding="3dp"
+            android:background="#443b46"
+            android:textColor="#a02b48"
+            android:textColorHint="#9e4853" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <EditText
+            android:id="@+id/edit7"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="verb+ed"
+            android:layout_marginLeft="6dp"
+            android:padding="3dp"
+            android:background="#443b46"
+            android:textColor="#a02b48"
+            android:textColorHint="#9e4853" />
+
+        <EditText
+            android:id="@+id/edit8"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="adj"
+            android:layout_marginLeft="6dp"
+            android:padding="3dp"
+            android:background="#443b46"
+            android:textColor="#a02b48"
+            android:textColorHint="#9e4853"/>
+        <EditText
+            android:id="@+id/edit9"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Adj"
+            android:layout_marginLeft="6dp"
+            android:padding="3dp"
+            android:background="#443b46"
+            android:textColor="#a02b48"
+            android:textColorHint="#9e4853" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/edit10"
+                android:layout_width="100dp"
+                android:textSize="25sp"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:fontFamily="@font/tungsten_bold"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:hint="Test Type"
+                android:layout_marginLeft="6dp"
+                android:padding="3dp"
+                android:background="#443b46"
+                android:textColor="#a02b48"
+                android:textColorHint="#9e4853" />
+            <EditText
+                android:id="@+id/edit11"
+                android:layout_width="100dp"
+                android:textSize="25sp"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:fontFamily="@font/tungsten_bold"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:hint="Magic realm"
+                android:layout_marginLeft="6dp"
+                android:padding="3dp"
+                android:background="#443b46"
+                android:textColor="#a02b48"
+                android:textColorHint="#9e4853" />
+            <EditText
+                android:id="@+id/edit12"
+                android:layout_width="100dp"
+                android:textSize="25sp"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:fontFamily="@font/tungsten_bold"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:hint="verb+ed"
+                android:layout_marginLeft="6dp"
+                android:padding="3dp"
+                android:background="#443b46"
+                android:textColor="#a02b48"
+                android:textColorHint="#9e4853" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <EditText
+            android:id="@+id/edit13"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Mythical creature"
+            android:layout_marginLeft="6dp"
+            android:padding="3dp"
+            android:background="#443b46"
+            android:textColor="#a02b48"
+            android:textColorHint="#9e4853" />
+        <EditText
+            android:id="@+id/edit14"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="Emotion"
+            android:layout_marginLeft="6dp"
+            android:padding="3dp"
+            android:background="#443b46"
+            android:textColor="#a02b48"
+            android:textColorHint="#9e4853" />
+        <EditText
+            android:id="@+id/edit15"
+            android:layout_width="100dp"
+            android:textSize="25sp"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/tungsten_bold"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:hint="liquid"
+            android:layout_marginLeft="6dp"
+            android:padding="3dp"
+            android:background="#443b46"
+            android:textColor="#a02b48"
+            android:textColorHint="#9e4853" />
+        </LinearLayout>
         <TextView
             android:id="@+id/final_piece_tv"
             android:layout_width="match_parent"
@@ -54,213 +316,11 @@
             android:fontFamily="@font/tungsten_bold"
             android:textColor="#A13333"
             android:textSize="35sp"/>
-        <EditText
-            android:id="@+id/edit1"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="cutlury"
-            android:textSize="25sp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-        <EditText
-            android:id="@+id/edit2"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="Desert"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-        <EditText
-            android:id="@+id/edit3"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="Body Part"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-        <EditText
-            android:id="@+id/edit4"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="Verb+ing"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-        <EditText
-            android:id="@+id/edit5"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="Verb+ing"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-
-        <EditText
-            android:id="@+id/edit6"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="Sth gross"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-        <EditText
-            android:id="@+id/edit7"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="verb+ed"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-        <EditText
-            android:id="@+id/edit8"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="adj"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-        <EditText
-            android:id="@+id/edit9"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="Adj"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-        <EditText
-            android:id="@+id/edit10"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="Test Type"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-        <EditText
-            android:id="@+id/edit11"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="Magic realm"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-        <EditText
-            android:id="@+id/edit12"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="verb+ed"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-        <EditText
-            android:id="@+id/edit13"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="Mythical creature"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-        <EditText
-            android:id="@+id/edit14"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="Emotion"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-        <EditText
-            android:id="@+id/edit15"
-            android:layout_width="100dp"
-            android:textSize="25sp"
-            android:layout_height="wrap_content"
-            android:alpha="0.7"
-            android:backgroundTint="#A13333"
-            android:fontFamily="@font/tungsten_bold"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
-            android:hint="liquid"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
         <Button
             android:id="@+id/submit_words_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#A13333"
+            android:backgroundTint="#a02b48"
             android:text="Submit"
             android:textColor="@color/white"
             android:textSize="25sp"

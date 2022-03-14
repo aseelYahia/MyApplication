@@ -2,33 +2,40 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
     android:background="@drawable/music_item">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="name "
+        android:textColor="@color/white"
         android:fontFamily="@font/georgiab"
         android:layout_margin="10dp"
-        android:id="@+id/albumName"/>
+        android:id="@+id/song_name"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="album "
-        android:layout_toRightOf="@id/albumName"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/song_name"
         android:fontFamily="@font/georgia"
         android:layout_margin="10dp"
-        android:id="@+id/albumrelease"/>
+        android:id="@+id/album_name"/>
+
     <TextView
-        android:layout_margin="10dp"
+        android:id="@+id/play_song"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:fontFamily="@font/optiengraversoldenglish"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
         android:text="play"
-        android:id="@+id/showSongs"/>
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

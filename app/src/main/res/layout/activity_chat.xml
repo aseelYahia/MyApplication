@@ -133,34 +133,93 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_margin="10dp">
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:layout_margin="4dp">
 
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/game_1989"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/cassete_bday_album"
                 android:layout_weight="1"
-                android:layout_margin="4dp">
+                >
 
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/game_lover"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/lover_vinyl"
                 android:layout_weight="1"
-                android:layout_margin="4dp">
+                >
 
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/game_red"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/red_vinyl"
                 android:layout_weight="1"
-                android:layout_margin="4dp">
+                >
 
-            </androidx.cardview.widget.CardView>
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/evermore"
+                    android:text="Play Speak now"
+                    android:textColor="@color/sand"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/evermore"
+                    android:text="pLay loverdle"
+                    android:textColor="@color/sand"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/evermore"
+                    android:text="Play Swiftlibs"
+                    android:textColor="@color/sand"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

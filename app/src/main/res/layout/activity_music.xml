@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MusicActivity"
-    android:background="@drawable/reputation_background"
+    android:background="@color/black"
     android:orientation="vertical">
 
     <TextView
@@ -20,7 +20,7 @@
 
 
         <ListView
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:id="@+id/lvItems"

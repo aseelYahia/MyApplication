@@ -3,6 +3,7 @@
     package="com.example.myapplication">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <service
+            android:name=".NotificationServiceT"
+            android:exported="false"></service>
+        <service
+            android:name=".NotificationService"
+            android:enabled="true"
+            android:exported="true" />
+
         <activity
             android:name=".BirthdayActivity"
             android:exported="true" />
@@ -68,6 +77,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -34,5 +34,9 @@
     <color name="fearless_brownish">#bb8f67</color>
     <color name="hot_pink">#FD226D</color>
     <color name="hoty_pinky">#FF1493</color>
+    <color name="red_brown"> #9A786B</color>
+    <color name="red_rosy_brown" >#AFaA94</color>
+    <color name="red_indian_red">#C4546B</color>
+    <color name="red_fire_brick">#AE1E4c</color>
 
 </resources>

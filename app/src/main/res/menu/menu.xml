@@ -6,24 +6,22 @@
         android:title="Profile"
         android:id="@+id/itemProfile"/>
 
-    <item
-        android:id="@+id/itemGames"
-        android:icon="@android:drawable/ic_menu_slideshow"
-        android:title="Games" />
 
     <item
-        android:title="listen to music"
+        android:title="play Songs"
         android:id="@+id/itemMusic"/>
 
     <item
         android:title="write songs"
         android:id="@+id/itemWriteSong"/>
+    <item
+        android:id="@+id/itemcelebrate"
+        android:title="Celebration?"/>
 
 
     <item
         android:title="Logout"
         android:id="@+id/itemLogout"/>
-    <item
-        android:title="madlib"
-        android:id="@+id/madlib"/>
+
+
 </menu>

@@ -17,7 +17,22 @@ public class MusicService extends Service {
     @Override
     public void onCreate(){
         super.onCreate();
-        mediaPlayer=MediaPlayer.create(this,R.raw.musicrington);
+        int[] r ={
+                R.raw.all_too_well_record,
+                R.raw.blank_space_record,
+                R.raw.cardigan_record,
+                R.raw.champagne_problems_record,
+                R.raw.clean_record,
+                R.raw.cornilia_street_record,
+                R.raw.enchanted_record,
+                R.raw.hey_stephen_record,
+                R.raw.new_years_record,
+                R.raw.the_last_time_record,
+                R.raw.tim_mcgraw_record,
+                R.raw.twenty_two_record,
+                R.raw.wonderland_record
+        };
+        mediaPlayer=MediaPlayer.create(this,r[MainActivity.record_idx]);
         mediaPlayer.setLooping(true);
         mediaPlayer.setVolume(100,100);
 

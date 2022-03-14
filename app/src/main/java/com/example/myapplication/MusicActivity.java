@@ -12,20 +12,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.myapplication.Adapter.CustomAdapter;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
+import com.example.myapplication.Adapter.SongAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
 public class MusicActivity extends AppCompatActivity implements DialogInterface.OnClickListener   {
 
-    ArrayList<Album> items;
-    ArrayList<String> items2;
-    CustomAdapter adapter;
+    ArrayList<Song> items;
+    SongAdapter adapter;
 
     FirebaseDatabase db=FirebaseDatabase.getInstance("https://taylor-ff1e9-default-rtdb.europe-west1.firebasedatabase.app/");
     DatabaseReference root=db.getReference("album");
@@ -41,34 +37,25 @@ public class MusicActivity extends AppCompatActivity implements DialogInterface.
         setContentView(R.layout.activity_music);
         lvItems = findViewById(R.id.lvItems);
 
-        items = new ArrayList<>();
-        //String[] red={"red","all too well"};
-        //String[] lover={"cruel summer","me"};
-        //items.add(new Album("red","12.11.2021",true,red));
-        //items.add(new Album("lover","idk",true,lover));
+        items=new ArrayList<>();
 
+        items.add(new Song("All too well","Red",0));
+        items.add(new Song("Blank space","1989",1));
+        items.add(new Song("Cardigan","folklore",2));
+        items.add(new Song("Champagne problems","evermore",3));
+        items.add(new Song("Clean","1989",4));
+        items.add(new Song("Cornilia Street","Lover",5));
+        items.add(new Song("Enchanted","Speak now",6));
+        items.add(new Song("Hey Stephen","Fearless",7));
+        items.add(new Song("New year's day","Reputation",8));
+        items.add(new Song("The last time","Red",9));
+        items.add(new Song("Time McGraw","Debut",10));
+        items.add(new Song("22","1989",11));
+        items.add(new Song("Wonderland","1989",12));
 
-        adapter = new CustomAdapter(this, R.layout.custom_album_row, items);
+        adapter=new SongAdapter(this, R.layout.custom_album_row,items);
         lvItems.setAdapter(adapter);
-        //User u=new User("name","dfeg","dfgh45");
 
-        //root.push().setValue(new Album("red","12.11.2021",true,red));
-
-        root.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for(DataSnapshot dataSnapshot: snapshot.getChildren()){
-                    Album album=dataSnapshot.getValue(Album.class);
-                    items.add(album);
-                    adapter.notifyDataSetChanged();
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
 
     }
     @Override
@@ -77,14 +64,11 @@ public class MusicActivity extends AppCompatActivity implements DialogInterface.
         return super.onCreateOptionsMenu(menu);
     }
 
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         Intent intent;
         switch (item.getItemId()){
-            case R.id.itemGames:
-                intent=new Intent(this, SpeechActivity.class);
-                startActivity(intent);
-                break;
 
             case R.id.itemMusic:
                 intent=new Intent(this, MusicActivity.class);
@@ -92,9 +76,20 @@ public class MusicActivity extends AppCompatActivity implements DialogInterface.
                 break;
 
             case R.id.itemProfile:
-                intent=new Intent(this, WelcomeActivity.class);
+                intent=new Intent(this, ActivityChat.class);
+                startActivity(intent);
+
+                break;
+            case R.id.itemWriteSong:
+                intent=new Intent(this, WriteSongActivity.class);
                 startActivity(intent);
                 break;
+
+            case R.id.itemcelebrate:
+                intent=new Intent(this, BirthdayActivity.class);
+                startActivity(intent);
+                break;
+
 
             case R.id.itemLogout:
                 AlertDialog.Builder builder=new AlertDialog.Builder(this);
@@ -102,13 +97,16 @@ public class MusicActivity extends AppCompatActivity implements DialogInterface.
                 builder.setCancelable(false);
                 builder.setPositiveButton("yes",this);
                 builder.setNegativeButton("No", this);
-                AlertDialog dialog=builder.create();
-                dialog.show();
+                AlertDialog dialog_logout=builder.create();
+                dialog_logout.show();
 
                 break;
+
+
         }//switch
         return super.onOptionsItemSelected(item);
     }//onOptionItemSelected
+
     @Override
     public void onClick(DialogInterface dialog, int which) {
         Intent intent;
